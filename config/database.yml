@@ -1,3 +1,9 @@
+production:
+  adapter: pg
+  database: postgres://xmlgsvbnwhvmbp:q8__juGlm4yWVsPuDJL06w6GHO@ec2-23-21-215-246.compute-1.amazonaws.com:5432/d5iluimehquinq
+  pool: 5
+  timeout: 5000
+
 development:
   adapter: sqlite3
   database: db/development.sqlite3
@@ -7,11 +13,5 @@ development:
 test:
   adapter: sqlite3
   database: db/test.sqlite3
-  pool: 5
-  timeout: 5000
-
-production:
-  adapter: sqlite3
-  database: db/production.sqlite3
   pool: 5
   timeout: 5000
