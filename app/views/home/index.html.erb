@@ -1,1 +1,8 @@
-<h1>Hello, Rails!</h1>
+put your quote
+<%= form_tag({ :action => :save }, { :method => :post }) do %>
+
+	Form contents
+	<%= text_field "quote", "content", :size => 500 %>
+	<%= submit_tag("Post") %>
+
+<% end %>
